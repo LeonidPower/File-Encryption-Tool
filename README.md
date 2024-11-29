@@ -22,11 +22,17 @@ python encrypt_tool.py --decrypt --algorithm <algorithm> --key <key_file> --inpu
 
 # Arguments
 --algorithm: Choose from `caesar`, `otp`, `aes`, `rsa`.
+
 --key: Path to the key file.
+
 --input: Path to the input file.
+
 --output: Path to the output file.
+
 --validate: To validate encryption by decrypting and comparing with the original file. (optional)
+
 --aes-keysize: Choose the key size for AES (128|192|256 bits), NOTE: it defaults to 256 bits. (optional)
+
 --rsa-keysize: Choose the key size for RSA (2048|3072|4096 bits), NOTE: it defaults to 4096 bits. (optional)
 
 ---Examples---
@@ -70,4 +76,4 @@ python encrypt_tool.py --decrypt --algorithm rsa --key key_files/rsa_private_ima
 2. Sample key files for different algorithms.
 3. Test input and output files for encryption and decryption.
 
-												Developed by - LeonidPower.
+Developed by - LeonidPower.
