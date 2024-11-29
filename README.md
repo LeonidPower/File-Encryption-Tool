@@ -1,5 +1,5 @@
 
------File Encryption Tool-----
+                                            -----File Encryption Tool-----
 
 # Description
 This tool provides encryption and decryption functionalities for files using various algorithms such as:
@@ -12,7 +12,7 @@ This tool provides encryption and decryption functionalities for files using var
 - Python 3.8+ (check with 'python --version', install from https://www.python.org/)
 - pycryptodome library (install with `pip install pycryptodome`)
 
----How to use format---
+                                              ---How to use format---
 
 # Encrypt a file inside bash
 python encrypt_tool.py --encrypt --algorithm <algorithm> --key <key_file> --input <input_file> --output <output_file>
@@ -35,7 +35,7 @@ python encrypt_tool.py --decrypt --algorithm <algorithm> --key <key_file> --inpu
 
 --rsa-keysize: Choose the key size for RSA (2048|3072|4096 bits), NOTE: it defaults to 4096 bits. (optional)
 
----Examples---
+                                                  ---Examples---
 
 # Caesar Encryption inside bash
 python encrypt_tool.py --encrypt --algorithm caesar --key key_files/caesar_key.key --input test_files/sample_input.txt --output output_files/caesar_encrypted.bin --validate
@@ -71,9 +71,10 @@ python encrypt_tool.py --encrypt --algorithm rsa --rsa-keysize 4096 --key key_fi
 python encrypt_tool.py --decrypt --algorithm rsa --key key_files/rsa_private.pem --input output_files/rsa_encrypted.bin --output output_files/rsa_decrypted.txt
 python encrypt_tool.py --decrypt --algorithm rsa --key key_files/rsa_private_image.pem --input output_files/rsa_encrypted_image.bin --output output_files/rsa_decrypted_image.png
 
----Files Included---
+                                              ---Files Included---
 1. `encrypt_tool.py`: The encryption tool script.
 2. Sample key files for different algorithms.
 3. Test input and output files for encryption and decryption.
+
 
 Developed by - LeonidPower.
